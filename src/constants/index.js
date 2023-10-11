@@ -40,6 +40,13 @@ export const navLinks = [
     },
 ];
 
+export const hero = [
+    "I specialize in frontend development, but I\n" +
+    "                        also have applications in my portfolio.",
+    "My main passion is combining both of these\n" +
+    "                        aspects using technologies like Next.JS."
+]
+
 const services = [
     {
         title: "Web Developer",

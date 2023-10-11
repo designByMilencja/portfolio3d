@@ -10,7 +10,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  /*color-scheme: dark;*/
+  color-scheme: dark;
 }
 
 .hash-span {
@@ -23,22 +23,31 @@
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
           to right,
-          #434343,
-          #000000
+          #000000,
+          #D8DBD5
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
           to right,
-          #434343,
-          #000000
+          #000000,
+          #D8DBD5
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.secondary-gradient {
+  background: #F98D52;
+  background: linear-gradient(-90deg, #F98D52 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
           -90deg,
-          #804dee 0%,
+          #F98D52 80%,
+          rgba(60, 51, 80, 0) 100%
+  );
+}
+.tertiary-gradient {
+  background: #1C98A1;
+  background: linear-gradient(-90deg, #1C98A1 100%, rgba(60, 51, 80, 0) 100%);
+  background: -webkit-linear-gradient(
+          -90deg,
+          #1C98A1 60%,
           rgba(60, 51, 80, 0) 100%
   );
 }
