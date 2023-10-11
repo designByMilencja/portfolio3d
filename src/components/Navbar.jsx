@@ -10,7 +10,7 @@ const Navbar = () => {
 
     return (
         <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 secondary-gradient`}>
-            <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+            <div className="w-full max-w-[1200px] flex justify-between items-center max-w-7xl mx-auto">
                 <Link to="/"
                       className="flex items-center gap-2"
                       onClick={() => {
