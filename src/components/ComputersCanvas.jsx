@@ -1,3 +1,4 @@
+'use client'
 import {Suspense} from "react";
 import {Canvas} from "@react-three/fiber";
 import {OrbitControls, Preload, useGLTF} from "@react-three/drei";
@@ -10,7 +11,7 @@ const Computers = () => {
     const triangle = useGLTF('./triangular_animated_portal/scene.gltf')
     return (
         <mesh>
-            <hemisphereLight intensity={121} groundColor="green"/>
+            <hemisphereLight intensity={91} groundColor="#FF8347"/>
             <pointLight intensity={1}/>
             <primitive object={triangle.scene}/>
         </mesh>
@@ -19,9 +20,10 @@ const Computers = () => {
 const ComputersCanvas = () => {
     return (
         <Canvas
+            className="cursor-pointer"
             frameloop="demand"
             shadows
-            camera={{position: [5, 3, 50], fov: 8}}
+            camera={{position: [15, 30, 30], fov: 4}}
             gl={{preserveDrawingBuffer: true}}
         >
             <Suspense fallback={<CanvasLoader/>}>
