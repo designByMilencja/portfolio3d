@@ -1,4 +1,3 @@
-import ComputersCanvas from "./ComputersCanvas.jsx";
 import {motion} from "framer-motion";
 import {styles} from "../style.js";
 import {fadeIn, textVariant} from "../utils/motion.js";
@@ -29,18 +28,13 @@ const ServiceCard = ({index, title, icon}) => {
 }
 const About = () => {
     return (
-        <section className="w-full rounded-xl tertiary-gradient">
-            <div className="flex flex-col xs:flex-row justify-around items-start p-4 overflow-hidden">
-                <motion.div
-                    variants={textVariant()}
-                    className="my-10 w-full xs:w-1/3 flex flex-col justify-center items-center">
-                    <p className={`${styles.sectionText}`}>Introduction</p>
-                    <h2 className={`${styles.h2Text}`}>About me</h2>
-                </motion.div>
-                <div className="flex-wrap h-[200px]">
-                    <ComputersCanvas/>
-                </div>
-            </div>
+        <section className="w-full rounded-xl tertiary-gradient pb-5">
+            <motion.div
+                variants={textVariant()}
+                className="w-full flex flex-col items-start pt-5">
+                <p className={`${styles.sectionText}`}>Introduction</p>
+                <h2 className={`${styles.h2Text} text-secondary`}>About me</h2>
+            </motion.div>
             <div className="flex flex-wrap md:flex-nowrap my-20">
                 <div className="w-full flex flex-col ss:flex-row md:flex-col md:w-1/2 justify-around">
                     <motion.p
