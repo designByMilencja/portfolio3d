@@ -14,11 +14,10 @@ import {
     mongodb,
     git,
     figma,
-    docker,
     carrent,
     jobit,
     tripguide,
-    threejs, smyk, design, logo,
+    threejs, smyk, design, logo, mysql, express,
 } from "../assets";
 
 export const navLinks = [
@@ -96,6 +95,10 @@ const technologies = [
         icon: nodejs,
     },
     {
+        name: "Express JS",
+        icon: express,
+    },
+    {
         name: "MongoDB",
         icon: mongodb,
     },
@@ -104,16 +107,16 @@ const technologies = [
         icon: threejs,
     },
     {
-        name: "git",
+        name: "GIT",
         icon: git,
     },
     {
-        name: "figma",
+        name: "FIGMA",
         icon: figma,
     },
     {
-        name: "docker",
-        icon: docker,
+        name: "MySQL",
+        icon: mysql,
     },
 ];
 
@@ -176,15 +179,12 @@ const projects = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
             },
             {
                 name: "mongodb",
-                color: "green-text-gradient",
             },
             {
                 name: "tailwind",
-                color: "pink-text-gradient",
             },
         ],
         image: carrent,
@@ -197,15 +197,12 @@ const projects = [
         tags: [
             {
                 name: "react",
-                color: "blue-text-gradient",
             },
             {
                 name: "restapi",
-                color: "green-text-gradient",
             },
             {
                 name: "scss",
-                color: "pink-text-gradient",
             },
         ],
         image: jobit,
@@ -218,15 +215,12 @@ const projects = [
         tags: [
             {
                 name: "nextjs",
-                color: "blue-text-gradient",
             },
             {
                 name: "supabase",
-                color: "green-text-gradient",
             },
             {
                 name: "css",
-                color: "pink-text-gradient",
             },
         ],
         image: tripguide,
