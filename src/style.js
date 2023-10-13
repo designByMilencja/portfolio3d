@@ -6,10 +6,10 @@ const styles = {
     heroHeadText:
         "font-black text-white lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2",
     h2Text:
-        "font-medium text-2xl sm:text-3xl md:text-4xl  text-secondary",
+        "font-medium text-2xl sm:text-3xl md:text-4xl px-5 py-3 tracking-wider",
 
     sectionText:
-        "text-sm ss:text-base py-3",
+        "text-sm ss:text-base px-5 py-4",
     sectionSubText:
         "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
 };
