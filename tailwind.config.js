@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#D8DBD5",
+        primary: "#fff",
         secondary: "#F98D52",
         tertiary: "#1C98A1",
         warning: "#D41130",
@@ -16,6 +16,10 @@ module.exports = {
       },
       boxShadow: {
         card: "0 35px 120px -15px #211e35",
+      },
+      textShadow: {
+        'default': '0 2px 0 rgba(0,0,0,0.3)',
+        'lg': '0 2px 2px rgba(0,0,0,0.3)',
       },
       screens: {
         xs: "460px",
