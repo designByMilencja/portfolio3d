@@ -15,7 +15,7 @@ const Hero = () => {
                 <div className="w-full text-tertiary flex flex-col p-6 overflow-hidden rounded-xl primary-gradient">
                     <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider">Hi, I&apos;m <span className="mt-5 md:mb-0">Milena Pieńkosz</span>
                     </h1>
-                    <h2 className={`${styles.h2Text} my-3 md:my-5`}>Fullstack Developer</h2>
+                    <h2 className={`${styles.h2Text} my-3 md:my-5 text-secondary`}>Fullstack Developer</h2>
                     <div className="my-4 max-w-[400px]">
                         {hero.map(desc => (
                             <p key={desc} className={`${styles.sectionText}`}>{desc}</p>
