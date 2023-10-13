@@ -1,6 +1,6 @@
 import {BrowserRouter} from "react-router-dom";
 import {About, Contact, Experience, Feedbacks, Navbar, StarsCanvas, Works, Tech, Hero} from "./components/index.js";
-import ComputersCanvas from "./components/ComputersCanvas.jsx";
+import ComputersCanvas from "./components/canvas/ComputersCanvas.jsx";
 
 const App = () => {
     return (
