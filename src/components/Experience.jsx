@@ -8,8 +8,8 @@ import {experiences} from "../constants/index.js";
 
 const ExperienceCard = ({experience}) =>
     <VerticalTimelineElement
-        contentStyle={{background: "white", color: "#1C98A1"}}
-        contentArrowStyle={{borderLeft: "#D8DBD5"}}
+        contentStyle={{background: "#fff", color: "#1C98A1"}}
+        contentArrowStyle={{borderLeft: "#fff"}}
         date={experience.date}
         iconStyle={{background: experience.iconBg}}
         icon={
@@ -25,7 +25,7 @@ const ExperienceCard = ({experience}) =>
             <h3 className="text-bold text-xl">
                 {experience.title}
             </h3>
-            <p className="text-primary text-base font-bold">{experience.company_name}</p>
+            <p className="text-secondary text-base font-bold">{experience.company_name}</p>
         </div>
     </VerticalTimelineElement>
 

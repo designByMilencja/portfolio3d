@@ -10,7 +10,7 @@ const ServiceCard = ({index, title, icon}) => {
         <Tilt className="xs:w-[250px] w-[90%] mx-auto">
             <motion.div
                 variants={fadeIn("right", "spring", 0.5 * index, 1.3)}
-                className="w-full light-orange-gradient p-[1px] rounded-xl shadow-card"
+                className="w-full light-orange-gradient p-[2px] rounded-xl shadow-card"
             >
                 <div
                     options={{
@@ -18,7 +18,7 @@ const ServiceCard = ({index, title, icon}) => {
                         scale: 1,
                         speed: 450
                     }}
-                    className="bg-tertiary rounded-xl px-2 py-5 min-h-[280px] flex justify-evenly items-center flex-col">
+                    className="bg-primary rounded-xl px-2 py-5 min-h-[200px] flex justify-evenly items-center flex-col">
                     <img src={icon} alt={title} className="w-16 h-16 object-contain"/>
                     <h3 className="text-xl font-bold text-center">{title}</h3>
                 </div>
@@ -59,7 +59,7 @@ const About = () => {
                 </div>
                 <div className="mt-10 flex flex-wrap p-4 gap-5 text-secondary">
                     {services.map((service, index) => (
-                        <ServiceCard key={index} {...service}/>
+                        <ServiceCard key={index} index={index} {...service}/>
                     ))}
                 </div>
             </div>
