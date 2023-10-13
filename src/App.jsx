@@ -5,16 +5,24 @@ import ComputersCanvas from "./components/canvas/ComputersCanvas.jsx";
 const App = () => {
     return (
         <BrowserRouter>
-            <div className="bg-hero-pattern bg-cover bg-center relative z-0">
-                <Navbar/>
-                <Hero/>
-                <About/>
-                <div className="flex-wrap h-[500px]">
-                    <ComputersCanvas/>
+            <div className="relative z-0 bg-primary">
+                <div className="bg-hero-pattern bg-cover bg-center">
+                    <Navbar/>
+                    <Hero/>
                 </div>
-                <Experience/>
-                <Tech/>
-                <Works/>
+                <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
+                    <About/>
+                    <div className="flex-wrap h-[500px]">
+                        <ComputersCanvas/>
+                    </div>
+                </div>
+                <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
+                    <Experience/>
+                    <Tech/>
+                </div>
+                <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
+                    <Works/>
+                </div>
                 <Feedbacks/>
                 <div className="relative z-0">
                     <Contact/>
