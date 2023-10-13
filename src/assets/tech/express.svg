@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="40" role="img" aria-label="EXPRESS.JS">
+    <title>EXPRESS.JS</title>
+    <g shape-rendering="crispEdges">
+        <rect width="150" height="40" fill="#404d59"/>
+    </g>
+    <g fill="#fff" text-anchor="middle" font-family="Verdana, Geneva, DejaVu Sans, sans-serif" text-rendering="geometricPrecision" font-size="20">
+        <text x="75" y="28" fill="#fff" textLength="120" lengthAdjust="spacingAndGlyphs">Express.js</text>
+    </g>
+</svg>
