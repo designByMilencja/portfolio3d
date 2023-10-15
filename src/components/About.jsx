@@ -39,7 +39,7 @@ const About = () => {
                 <div className="w-full flex flex-col ss:flex-row md:flex-col md:w-1/2 justify-around">
                     <motion.p
                         variants={fadeIn("", "", .1, 1)}
-                        className={`${styles.sectionText} ${styles.padding} max-w-[400px]`}> I’m currently
+                        className={`${styles.sectionSubText} ${styles.padding} max-w-[400px]`}> I’m currently
                         traveling
                         around the world in a camper van.
                         I am interested in a fullstack developing so every day I develop my skills on real projects. You
@@ -51,7 +51,7 @@ const About = () => {
                     </motion.p>
                     <motion.p
                         variants={fadeIn("", "", 0.3, 1)}
-                        className={`${styles.sectionText} ${styles.padding} max-w-[400px]`}>
+                        className={`${styles.sectionSubText} ${styles.padding} max-w-[400px]`}>
                         I have experience in Typescript and Javascript, I know frameworks like React, Next.
                         I collaborate closely with clients to create amazing and useful products. Let&apos;s work
                         together to bring your idea to life!
