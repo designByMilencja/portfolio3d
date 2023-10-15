@@ -9,9 +9,9 @@ const styles = {
         "font-medium text-2xl sm:text-3xl md:text-4xl px-5 py-3 tracking-wider",
 
     sectionText:
-        "text-sm ss:text-base px-5 py-4",
+        "text-sm ss:text-base px-5 py-4 uppercase tracking-wider",
     sectionSubText:
-        "sm:text-[18px] text-[14px] text-secondary uppercase tracking-wider",
+        "sm:text-[18px] text-[14px]",
 };
 
 export { styles };
