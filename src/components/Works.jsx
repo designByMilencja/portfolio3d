@@ -52,7 +52,7 @@ const Works = () => {
             <div className="w-full flex flex-wrap justify-evenly">
                 <motion.p
                     variants={fadeIn("", "", 0.1, 1)}
-                    className={`${styles.sectionText} ${styles.padding} max-w-[400px]`}
+                    className={`${styles.sectionSubText} ${styles.padding} max-w-[400px]`}
                 >
                     I really like do a lot of different cases because I love to learn new things
                     about our world, many industries, new people and my work. each case of my client is treated
@@ -60,7 +60,7 @@ const Works = () => {
                 </motion.p>
                 <motion.p
                     variants={fadeIn("", "", 0.1, 1)}
-                    className={`${styles.sectionText} ${styles.padding} max-w-[400px]`}
+                    className={`${styles.sectionSubText} ${styles.padding} max-w-[400px]`}
                 >
                     Below are the projects I have done so far. These include both websites and applications. Each
                     project is briefly described and accompanied by a link to the hosted project and also directly to
