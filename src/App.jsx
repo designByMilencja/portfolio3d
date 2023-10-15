@@ -22,8 +22,8 @@ const App = () => {
                 </div>
                 <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
                     <Works/>
+                    <Feedbacks/>
                 </div>
-                <Feedbacks/>
                 <div className="relative z-0">
                     <Contact/>
                     <StarsCanvas/>
