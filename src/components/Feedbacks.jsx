@@ -8,7 +8,7 @@ const FeedbackCard = ({index, testimonial, name, designation, company, image}) =
     return (
         <motion.div
             variants={fadeIn("", "spring", index * 0.5, 0.75)}
-            className="primary-gradient p-10 rounded-xl xs:w-[320px] w-full">
+            className="primary-gradient shadow-card p-10 rounded-xl xs:w-[320px] w-full">
             <p className="text-tertiary font-black text-[48px]">"</p>
             <div className="mt-1 bg-secondary p-4 rounded-xl">
                 <p className="text-primary tracking-wider text-[18px]">{testimonial}</p>
