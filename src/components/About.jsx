@@ -18,7 +18,7 @@ const ServiceCard = ({index, title, icon}) => {
                         scale: 1,
                         speed: 450
                     }}
-                    className="bg-primary rounded-xl px-2 py-5 min-h-[200px] flex justify-evenly items-center flex-col">
+                    className="github-gradient rounded-xl px-2 py-5 min-h-[200px] flex justify-evenly items-center flex-col">
                     <img src={icon} alt={title} className="w-16 h-16 object-contain"/>
                     <h3 className="text-xl font-bold text-center">{title}</h3>
                 </div>
@@ -39,7 +39,7 @@ const About = () => {
                 <div className="w-full flex flex-col ss:flex-row md:flex-col md:w-1/2 justify-around">
                     <motion.p
                         variants={fadeIn("", "", .1, 1)}
-                        className={`${styles.sectionText} ${styles.padding} max-w-[400px]`}> I’m currently
+                        className={`${styles.sectionSubText} ${styles.padding} max-w-[400px]`}> I’m currently
                         traveling
                         around the world in a camper van.
                         I am interested in a fullstack developing so every day I develop my skills on real projects. You
@@ -51,13 +51,13 @@ const About = () => {
                     </motion.p>
                     <motion.p
                         variants={fadeIn("", "", 0.3, 1)}
-                        className={`${styles.sectionText} ${styles.padding} max-w-[400px]`}>
+                        className={`${styles.sectionSubText} ${styles.padding} max-w-[400px]`}>
                         I have experience in Typescript and Javascript, I know frameworks like React, Next.
                         I collaborate closely with clients to create amazing and useful products. Let&apos;s work
                         together to bring your idea to life!
                     </motion.p>
                 </div>
-                <div className="mt-10 flex flex-wrap p-4 gap-5 text-secondary">
+                <div className="mt-10 flex flex-wrap p-4 gap-5 text-primary">
                     {services.map((service, index) => (
                         <ServiceCard key={index} index={index} {...service}/>
                     ))}

@@ -1,5 +1,5 @@
 import {BrowserRouter} from "react-router-dom";
-import {About, Contact, Experience, Feedbacks, Navbar, StarsCanvas, Works, Tech, Hero} from "./components/index.js";
+import {About, Contact, Experience, Feedbacks, Navbar, Works, Tech, Hero, StarsCanvas} from "./components/index.js";
 import ComputersCanvas from "./components/canvas/ComputersCanvas.jsx";
 
 const App = () => {
@@ -23,7 +23,9 @@ const App = () => {
                 <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
                     <Works/>
                 </div>
-                <Feedbacks/>
+                <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
+                    <Feedbacks/>
+                </div>
                 <div className="relative z-0">
                     <Contact/>
                     <StarsCanvas/>

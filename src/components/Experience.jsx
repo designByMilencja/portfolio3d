@@ -8,7 +8,7 @@ import {experiences} from "../constants/index.js";
 
 const ExperienceCard = ({experience}) =>
     <VerticalTimelineElement
-        contentStyle={{background: "#fff", color: "#1C98A1"}}
+        contentStyle={{background: "#1C98A1", color: "#fff"}}
         contentArrowStyle={{borderLeft: "#fff"}}
         date={experience.date}
         iconStyle={{background: experience.iconBg}}
