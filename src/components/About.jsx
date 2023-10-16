@@ -18,7 +18,7 @@ const ServiceCard = ({index, title, icon}) => {
                         scale: 1,
                         speed: 450
                     }}
-                    className="bg-primary rounded-xl px-2 py-5 min-h-[200px] flex justify-evenly items-center flex-col">
+                    className="github-gradient rounded-xl px-2 py-5 min-h-[200px] flex justify-evenly items-center flex-col">
                     <img src={icon} alt={title} className="w-16 h-16 object-contain"/>
                     <h3 className="text-xl font-bold text-center">{title}</h3>
                 </div>
@@ -57,7 +57,7 @@ const About = () => {
                         together to bring your idea to life!
                     </motion.p>
                 </div>
-                <div className="mt-10 flex flex-wrap p-4 gap-5 text-secondary">
+                <div className="mt-10 flex flex-wrap p-4 gap-5 text-primary">
                     {services.map((service, index) => (
                         <ServiceCard key={index} index={index} {...service}/>
                     ))}

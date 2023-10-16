@@ -18,7 +18,7 @@ const Hero = () => {
                     <h2 className={`${styles.h2Text} my-3 md:my-5 text-secondary`}>Fullstack Developer</h2>
                     <div className="my-4 max-w-[400px]">
                         {hero.map(desc => (
-                            <p key={desc} className={`${styles.sectionText}`}>{desc}</p>
+                            <p key={desc} className={`${styles.sectionSubText} p-4`}>{desc}</p>
                         ))}
                     </div>
                     <div className="w-full flex justify-center items-center">
