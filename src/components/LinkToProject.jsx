@@ -1,7 +1,7 @@
 const LinkToProject = ({src, image, alt}) => {
     return (
         <div onClick={()=> window.open(src, "_blank")}
-             className="github-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
+             className="primary-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
         >
             <img
                 src={image}
