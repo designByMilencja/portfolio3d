@@ -45,7 +45,7 @@ const Contact = () => {
                             value={form.name}
                             onChange={handleChange}
                             placeholder="What's your name?"
-                            className="primary-gradient py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
+                            className="bg-primary py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
@@ -56,7 +56,7 @@ const Contact = () => {
                             value={form.email}
                             onChange={handleChange}
                             placeholder="What's your email?"
-                            className="primary-gradient py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
+                            className="bg-primary py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
@@ -67,11 +67,11 @@ const Contact = () => {
                             value={form.message}
                             onChange={handleChange}
                             placeholder="Type your message?"
-                            className="primary-gradient py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
+                            className="bg-primary py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <button type="submit"
-                            className="github-gradient tracking-wider py-3 px-8 outline-none w-fit uppercase text-primary font-bold shadow-md shadow-secondary rounded-xl self-center">
+                            className="github-gradient tracking-wider py-3 px-8 outline-none w-fit uppercase text-primary font-bold shadow-md shadow-primary rounded-xl self-center">
                         {loading ? 'Sending...' : 'Send'}
                     </button>
                 </form>
