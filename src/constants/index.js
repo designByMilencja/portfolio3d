@@ -17,7 +17,7 @@ import {
     carrent,
     jobit,
     tripguide,
-    threejs, smyk, design, logo, mysql, express,
+    threejs, smyk, design, mysql, express, logo
 } from "../assets";
 
 export const navLinks = [

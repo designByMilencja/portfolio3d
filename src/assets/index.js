@@ -1,6 +1,4 @@
-import logo from "./MilenaPieńkosz-logoLight.png";
 import l from "./orange.png";
-import logoDark from "./MilenaPieńkosz-logoDark.png"
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -29,9 +27,7 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import lo from "./s.png";
 import log from "./s2.png";
-import blueLogo from "./blue-logo.png";
 import walk from "./walk.svg";
 import design from './Design by Milencja logo.png';
 import smyk from './smyk.png'
@@ -39,8 +35,10 @@ import mysql from './tech/mysql_icon.svg'
 import express from './tech/express.svg'
 import desktop from './desktop-outline.svg'
 import github from './logo-github.svg';
+import logo from './s2.png'
 
 export {
+    logo,
     github,
     desktop,
     express,
@@ -48,12 +46,8 @@ export {
     design,
     smyk,
     walk,
-    blueLogo,
     l,
-    lo,
     log,
-    logo,
-    logoDark,
     backend,
     creator,
     mobile,
