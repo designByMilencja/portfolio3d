@@ -42,7 +42,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
 }
 const Works = () => {
     return (
-        <section className="w-full rounded-xl tertiary-gradient pb-5">
+        <section  className="w-full rounded-xl tertiary-gradient pb-5">
             <motion.div
                 variants={textVariant()}
                 className="w-full flex flex-col items-start pt-5">
