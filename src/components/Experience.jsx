@@ -8,7 +8,7 @@ import {experiences} from "../constants/index.js";
 
 const ExperienceCard = ({experience}) =>
     <VerticalTimelineElement
-        contentStyle={{background: "#1C98A1", color: "#fff"}}
+        contentStyle={{background: "#F98D52", color: "#fff"}}
         contentArrowStyle={{borderLeft: "#fff"}}
         date={experience.date}
         iconStyle={{background: experience.iconBg}}
@@ -25,18 +25,18 @@ const ExperienceCard = ({experience}) =>
             <h3 className="text-bold text-xl">
                 {experience.title}
             </h3>
-            <p className="text-secondary text-base font-bold">{experience.company_name}</p>
+            <p className="text-tertiary text-base font-bold">{experience.company_name}</p>
         </div>
     </VerticalTimelineElement>
 
 const Experience = () => {
     return (
-        <section className="w-full rounded-xl secondary-gradient pb-5">
+        <section className="w-full rounded-xl tertiary-gradient pb-5">
             <motion.div
                 variants={textVariant()}
                 className="w-full flex flex-col items-start pt-5">
                 <p className={`${styles.sectionText}`}>What I have done so far</p>
-                <h2 className={`${styles.h2Text} text-tertiary`}>Work Experience</h2>
+                <h2 className={`${styles.h2Text} text-secondary`}>Work Experience</h2>
             </motion.div>
             <div className="mt-20 flex flex-col">
                 <VerticalTimeline>

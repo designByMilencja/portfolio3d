@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import {styles} from "../style.js";
 import {hero} from "../constants/index.js";
 import {walk} from "../assets/index.js";
+import ComputersCanvas from "./canvas/ComputersCanvas.jsx";
 
 const Hero = () => {
     return (
@@ -13,13 +14,16 @@ const Hero = () => {
                     <div className="w-1 sm:h-60 h-40 secondary-gradient"/>
                 </div>
                 <div className="w-full text-tertiary flex flex-col p-6 overflow-hidden rounded-xl primary-gradient">
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider">Hi, I&apos;m <span className="mt-5 md:mb-0">Milena Pieńkosz</span>
+                    <h1 className="text-2xl ss:text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider">Hi, I&apos;m <span className="mt-5 md:mb-0">Milena Pieńkosz</span>
                     </h1>
-                    <h2 className={`${styles.h2Text} my-3 md:my-5 text-secondary`}>Fullstack Developer</h2>
-                    <div className="my-4 max-w-[400px]">
+                    <h2 className={`${styles.h2Text} my-1 md:my-5 text-secondary`}>Fullstack Developer</h2>
+                    <div className="my-2 max-w-[400px]">
                         {hero.map(desc => (
                             <p key={desc} className={`${styles.sectionSubText} p-4`}>{desc}</p>
                         ))}
+                    </div>
+                    <div className="flex-wrap h-[200px]">
+                        <ComputersCanvas/>
                     </div>
                     <div className="w-full flex justify-center items-center">
                         <a href="#projects">
