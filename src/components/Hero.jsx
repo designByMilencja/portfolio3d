@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import {styles} from "../style.js";
 import {hero} from "../constants/index.js";
 import {walk} from "../assets/index.js";
-import ComputersCanvas from "./canvas/ComputersCanvas.jsx";
 
 const Hero = () => {
     return (
@@ -22,11 +21,9 @@ const Hero = () => {
                             <p key={desc} className={`${styles.sectionSubText} p-4`}>{desc}</p>
                         ))}
                     </div>
-                    <div className="flex-wrap h-[200px]">
-                        <ComputersCanvas/>
-                    </div>
                     <div className="w-full flex justify-center items-center">
                         <a href="#projects">
+                            <p className="capitalize text-tertiary tracking-wider">projects?</p>
                             <motion.div
                                 className="flex justify-center items-center"
                             animate={{
@@ -38,7 +35,6 @@ const Hero = () => {
                                 repeatType: "loop"
                             }}>
                                 <img className="w-[25px] h-[64px]" src={walk} alt="icon of walking person"/>
-                                <p className="capitalize text-tertiary tracking-wider">projects?</p>
                             </motion.div>
                         </a>
                     </div>
