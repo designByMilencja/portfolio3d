@@ -14,9 +14,6 @@ import {
     mongodb,
     git,
     figma,
-    carrent,
-    jobit,
-    tripguide,
     threejs, smyk, design, mysql, express, logo
 } from "../assets";
 
@@ -187,7 +184,7 @@ const projects = [
                 name: "tailwind",
             },
         ],
-        image: carrent,
+        image: design,
         source_code_link: "https://github.com/",
     },
     {
@@ -205,7 +202,7 @@ const projects = [
                 name: "scss",
             },
         ],
-        image: jobit,
+        image: design,
         source_code_link: "https://github.com/",
     },
     {
@@ -223,7 +220,7 @@ const projects = [
                 name: "css",
             },
         ],
-        image: tripguide,
+        image: design,
         source_code_link: "https://github.com/",
     },
 ];

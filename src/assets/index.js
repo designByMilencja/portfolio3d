@@ -1,4 +1,3 @@
-import l from "./orange.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -19,15 +18,8 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
-
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
-import log from "./s2.png";
+import logo from "./logo.png";
+import Logo from "./orange-logo.png";
 import walk from "./walk.svg";
 import design from './Design by Milencja logo.png';
 import smyk from './smyk.png'
@@ -35,10 +27,9 @@ import mysql from './tech/mysql_icon.svg'
 import express from './tech/express.svg'
 import desktop from './desktop-outline.svg'
 import github from './logo-github.svg';
-import logo from './s2.png'
 
 export {
-    logo,
+    Logo,
     github,
     desktop,
     express,
@@ -46,8 +37,7 @@ export {
     design,
     smyk,
     walk,
-    l,
-    log,
+    logo,
     backend,
     creator,
     mobile,
@@ -66,11 +56,4 @@ export {
     tailwind,
     typescript,
     threejs,
-    meta,
-    shopify,
-    starbucks,
-    tesla,
-    carrent,
-    jobit,
-    tripguide,
 };

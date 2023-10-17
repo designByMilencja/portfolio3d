@@ -1,7 +1,7 @@
 import {styles} from "../style.js";
 import {Link} from "react-router-dom";
 import {useState} from "react";
-import { close, l, menu} from "../assets/index.js";
+import { close, Logo, menu} from "../assets/index.js";
 import {navLinks} from "../constants/index.js";
 
 const Navbar = () => {
@@ -17,7 +17,7 @@ const Navbar = () => {
                           setActive("");
                           window.scrollTo(0, 0);
                       }}>
-                    <img src={l}
+                    <img src={Logo}
                          className="h-auto w-[82px]" alt="logo image"/>
                 </Link>
                 <ul className="hidden list-none sm:flex flex-row gap-10">
