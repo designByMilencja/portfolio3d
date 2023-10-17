@@ -31,7 +31,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
                     <h3 className="text-primary text-[24px]">{name}</h3>
                     <p className="mt-2 text-primary text-[14px]">{description}</p>
                 </div>
-                <div className="mt-4 flex flex-wrap gap-2 justify-center">
+                <div className="shadow-card mt-4 flex flex-wrap gap-2 justify-center">
                     {tags.map((tag) => (
                         <p key={tag.name} className="rounded-xl p-3 text-[14px] github-gradient font-bold">#{tag.name}</p>
                     ))}
@@ -42,7 +42,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
 }
 const Works = () => {
     return (
-        <section className="w-full rounded-xl tertiary-gradient pb-5">
+        <section  className="w-full rounded-xl tertiary-gradient pb-5">
             <motion.div
                 variants={textVariant()}
                 className="w-full flex flex-col items-start pt-5">
