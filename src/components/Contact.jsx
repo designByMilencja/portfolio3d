@@ -5,8 +5,6 @@ import {useRef, useState} from "react";
 import {slideIn} from "../utils/motion.js";
 import {styles} from "../style.js";
 import EarthCanvas from "./canvas/EarthCanvas.jsx";
-
-
 const Contact = () => {
     const formRef = useRef();
     const [form, setForm] = useState({
@@ -16,12 +14,29 @@ const Contact = () => {
     })
     const [loading, setLoading] = useState(false);
 
-    function handleSubmit() {
-
+    function handleSubmit(e) {
+        e.preventDefault();
+        setLoading(true)
+        emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY).then(
+            () => {
+                setLoading(false)
+                alert('Thank you. I will get back to you as soon as possible');
+                setForm({
+                    name: '',
+                    email: '',
+                    message: ''
+                })
+            }, (error) => {
+                setLoading(false)
+                console.log(e)
+                alert('Something went wrong')
+            }
+        )
     }
 
-    function handleChange() {
-
+    function handleChange(e) {
+        const {name, value} = e.target;
+        setForm({...form, [name]: value})
     }
 
     return (
@@ -45,7 +60,7 @@ const Contact = () => {
                             value={form.name}
                             onChange={handleChange}
                             placeholder="What's your name?"
-                            className="primary-gradient py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
+                            className="bg-primary py-4 px-6 placeholder:text-secondary text-tertiary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
@@ -56,7 +71,7 @@ const Contact = () => {
                             value={form.email}
                             onChange={handleChange}
                             placeholder="What's your email?"
-                            className="primary-gradient py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
+                            className="bg-primary py-4 px-6 placeholder:text-secondary text-tertiary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
@@ -67,11 +82,11 @@ const Contact = () => {
                             value={form.message}
                             onChange={handleChange}
                             placeholder="Type your message?"
-                            className="primary-gradient py-4 px-6 placeholder:text-secondary text-primary rounded-xl outlined-none border-none font-medium"
+                            className="bg-primary py-4 px-6 placeholder:text-secondary text-tertiary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <button type="submit"
-                            className="github-gradient tracking-wider py-3 px-8 outline-none w-fit uppercase text-primary font-bold shadow-md shadow-secondary rounded-xl self-center">
+                            className="github-gradient tracking-wider py-3 px-8 outline-none w-fit uppercase text-primary font-bold shadow-md shadow-primary rounded-xl self-center">
                         {loading ? 'Sending...' : 'Send'}
                     </button>
                 </form>

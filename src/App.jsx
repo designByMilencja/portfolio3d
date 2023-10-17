@@ -1,6 +1,5 @@
 import {BrowserRouter} from "react-router-dom";
 import {About, Contact, Experience, Feedbacks, Navbar, Works, Tech, Hero, StarsCanvas} from "./components/index.js";
-import ComputersCanvas from "./components/canvas/ComputersCanvas.jsx";
 
 const App = () => {
     return (
@@ -12,9 +11,6 @@ const App = () => {
                 </div>
                 <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
                     <About/>
-                    <div className="flex-wrap h-[500px]">
-                        <ComputersCanvas/>
-                    </div>
                 </div>
                 <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
                     <Experience/>
@@ -26,7 +22,7 @@ const App = () => {
                 <div className="bg-hero-pattern bg-no-repeat bg-cover bg-center">
                     <Feedbacks/>
                 </div>
-                <div className="relative z-0">
+                <div className="relative z-0 bg-hero-pattern bg-no-repeat bg-cover bg-center">
                     <Contact/>
                     <StarsCanvas/>
                 </div>
