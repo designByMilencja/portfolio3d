@@ -7,7 +7,7 @@ import {Tilt} from "react-tilt";
 import {desktop, github,} from "../assets/index.js";
 import LinkToProject from "./LinkToProject.jsx";
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
+const ProjectCard = ({index, name, description, tags, image, source_code_link, source_live_link}) => {
     return (
         <motion.div
             variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -24,14 +24,14 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
                         className="w-full h-full object-cover rounded-xl"/>
                     <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-1">
                         <LinkToProject image={github} alt="github icon" src={source_code_link}/>
-                        <LinkToProject image={desktop} alt="desktop icon" src={source_code_link}/>
+                        <LinkToProject image={desktop} alt="desktop icon" src={source_live_link}/>
                     </div>
                 </div>
                 <div className="mt-5 font-bold">
                     <h3 className="text-primary text-[24px]">{name}</h3>
                     <p className="mt-2 text-primary text-[14px]">{description}</p>
                 </div>
-                <div className="shadow-card mt-4 flex flex-wrap gap-2 justify-center">
+                <div className="mt-4 flex flex-wrap gap-2 justify-center">
                     {tags.map((tag) => (
                         <p key={tag.name} className="rounded-xl p-3 text-[14px] github-gradient font-bold">#{tag.name}</p>
                     ))}
