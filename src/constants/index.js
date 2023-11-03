@@ -170,40 +170,47 @@ const testimonials = [
 
 const projects = [
     {
-        name: "Car Rent",
+        name: "VanLife Website",
         description:
-            "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+            "A page for a couple traveling by camper, containing information about visited countries, photo" +
+            " galleries - slider and gallery with image filtering. There is also an additional sub-page to encourage" +
+            " people to visit the app, which is also about camper life.",
         tags: [
             {
                 name: "react",
             },
             {
-                name: "mongodb",
+                name: "vite",
             },
             {
                 name: "tailwind",
             },
         ],
-        image: design,
-        source_code_link: "https://github.com/",
+        image: "/projects/vanlife.png",
+        source_code_link: "https://van-life-kohl.vercel.app/",
+        source_live_link: "https://github.com/designByMilencja/Van-Life-Website",
     },
     {
-        name: "Job IT",
+        name: "Space Mobile House Website",
         description:
-            "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+            "The site of a company offering frame houses for sale. The site includes information about the company, video and photos showcasing the client's products, a timeline with events, and a contact form to allow interaction for potential customers.",
         tags: [
             {
                 name: "react",
             },
             {
-                name: "restapi",
+                name: "tailwind",
             },
             {
-                name: "scss",
+                name: "framer-motion",
+            },
+            {
+                name: "email.js",
             },
         ],
-        image: design,
-        source_code_link: "https://github.com/",
+        image: "/projects/spacemobile.png",
+        source_code_link: "",
+        source_live_link: "https://github.com/designByMilencja/frame-houses",
     },
     {
         name: "Trip Guide",
