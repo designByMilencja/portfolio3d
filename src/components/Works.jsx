@@ -16,7 +16,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, s
                 scale: 1,
                 speed: 450
             }}
-                  className="bg-tertiary border border-secondary p-5 rounded-xl sm:w-[360px] w-full">
+                  className="flex flex-col bg-tertiary border border-secondary p-5 rounded-xl sm:w-[360px] w-full min-h-[800px]">
                 <div className="relative w-full h-[300px]">
                     <img
                         src={image}
@@ -27,6 +27,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, s
                         <LinkToProject image={desktop} alt="desktop icon" src={source_live_link}/>
                     </div>
                 </div>
+                <div className="flex flex-col flex-1 justify-evenly">
                 <div className="mt-5 font-bold">
                     <h3 className="text-primary text-[24px]">{name}</h3>
                     <p className="mt-2 text-primary text-[14px]">{description}</p>
@@ -35,6 +36,7 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, s
                     {tags.map((tag) => (
                         <p key={tag.name} className="rounded-xl p-3 text-[14px] github-gradient font-bold">#{tag.name}</p>
                     ))}
+                </div>
                 </div>
             </Tilt>
         </motion.div>
