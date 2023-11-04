@@ -177,13 +177,13 @@ const projects = [
             " people to visit the app, which is also about camper life.",
         tags: [
             {
-                name: "react",
+                name: "react.js",
             },
             {
                 name: "vite",
             },
             {
-                name: "tailwind",
+                name: "tailwind.css",
             },
         ],
         image: "/projects/vanlife.png",
@@ -196,10 +196,13 @@ const projects = [
             "The site of a company offering frame houses for sale. The site includes information about the company, video and photos showcasing the client's products, a timeline with events, and a contact form to allow interaction for potential customers.",
         tags: [
             {
-                name: "react",
+                name: "next.js",
             },
             {
-                name: "tailwind",
+                name: "react.js",
+            },
+            {
+                name: "tailwind.css",
             },
             {
                 name: "framer-motion",
@@ -213,22 +216,59 @@ const projects = [
         source_live_link: "https://github.com/designByMilencja/frame-houses",
     },
     {
-        name: "Trip Guide",
+        name: "BrainWave AI Website",
         description:
-            "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+            "A website made with no code webflow technology. A project describing a company that designs chatbots and performs automation. Fully responsive site with animations to diversify user experience.",
         tags: [
             {
-                name: "nextjs",
-            },
-            {
-                name: "supabase",
-            },
-            {
-                name: "css",
+                name: "webflow",
             },
         ],
-        image: design,
-        source_code_link: "https://github.com/",
+        image: "/projects/webflow.png",
+        source_code_link: "",
+        source_live_link: "https://brainstorm-4f8fbf.webflow.io/"
+    },
+    {
+        name: "BrainWave AI Website - second version",
+        description:
+            "A website made with no code webflow technology. A project describing a company that designs chatbots and performs automation. Fully responsive site with animations to diversify user experience.",
+        tags: [
+            {
+                name: "webflow",
+            },
+        ],
+        image: "/projects/webflow2.png",
+        source_code_link: "",
+        source_live_link: "https://brainstorm-4f8fbf.webflow.io/"
+    },
+    {
+        name: "Project Head Hunter Application",
+        description:
+            "Group project carried out to specification and mock-ups provided. Working in scram technology, under" +
+            " the supervision of a global Scrum Master and the client.Features: authentication, csv file support, restful API, database integration, filtering and searching, pagination",
+        tags: [
+            {
+                name: "react.js",
+            },
+            {
+                name: "express.js",
+            },
+            {
+                name: "material.ui",
+            },
+            {
+                name: "mongodb",
+            },
+            {
+                name: "typescript",
+            },
+            {
+                name: "jwt",
+            },
+        ],
+        image: "/projects/headhunter.png",
+        source_code_link: "https://github.com/designByMilencja/g7-headhunter-server",
+        source_live_link: "https://www.youtube.com/watch?v=B_WKuYeoT2Y"
     },
 ];
 
