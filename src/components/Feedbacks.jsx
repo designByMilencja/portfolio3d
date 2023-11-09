@@ -4,13 +4,13 @@ import {styles} from "../style.js";
 import {fadeIn, textVariant} from "../utils/motion.js";
 import {testimonials} from "../constants/index.js";
 
-const FeedbackCard = ({index, testimonial, name, designation, company, image}) => {
+const FeedbackCard = ({index, testimonial, name, designation}) => {
     return (
         <motion.div
             variants={fadeIn("", "spring", index * 0.5, 0.75)}
             className="primary-gradient shadow-card p-2 rounded-xl xs:w-[320px] w-full">
             <p className="text-tertiary font-black text-[48px]">"</p>
-            <div className="mt-1 bg-secondary p-4 rounded-xl">
+            <div className="mt-1 bg-secondary p-4 rounded-xl min-h-[350px]">
                 <p className="text-primary tracking-wider text-[18px]">{testimonial}</p>
                 <div className="mt-7 flex justify-between items-center gap-1">
                     <div className="text-primary flex-1 flex flex-col">
@@ -18,13 +18,9 @@ const FeedbackCard = ({index, testimonial, name, designation, company, image}) =
                             <span className="rounded-xl">@</span> {name}
                         </p>
                         <p className="mt-1 text-[12px] rounded-xl">
-                            {designation} of {company}
+                            {designation}
                         </p>
                     </div>
-                    <img
-                    src={image}
-                    alt={`feedback by ${name}`}
-                    className="w-10 h-10 rounded-full bg-primary object-cover p-1"/>
                 </div>
             </div>
         </motion.div>
