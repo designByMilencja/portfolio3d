@@ -7,7 +7,7 @@ import {Tilt} from "react-tilt";
 import {desktop, github,} from "../assets/index.js";
 import LinkToProject from "./LinkToProject.jsx";
 
-const ProjectCard = ({index, name, description, tags, image, source_code_link, source_live_link}) => {
+export const ProjectCard = ({index, name, description, tags, image, source_code_link, source_live_link}) => {
     return (
         <motion.div
             variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -16,18 +16,18 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link, s
                 scale: 1,
                 speed: 450
             }}
-                  className="flex flex-col bg-tertiary border border-secondary p-5 rounded-xl sm:w-[360px] w-full min-h-[800px]">
-                <div className="relative w-full h-[300px]">
+                  className="flex flex-col bg-tertiary border border-secondary p-1 rounded-xl sm:w-[360px] w-full min-h-[700px]">
+                <div className="relative w-full h-[300px] mt-2">
                     <img
                         src={image}
                         alt={name}
-                        className="w-full h-full object-cover rounded-xl"/>
+                        className="w-full h-full object-cover rounded-xl p-1"/>
                     <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-1">
                         <LinkToProject image={github} alt="github icon" src={source_code_link}/>
                         <LinkToProject image={desktop} alt="desktop icon" src={source_live_link}/>
                     </div>
                 </div>
-                <div className="flex flex-col flex-1 justify-evenly">
+                <div className="flex flex-col flex-1 justify-evenly p-1">
                 <div className="mt-5 font-bold">
                     <h3 className="text-primary text-[24px]">{name}</h3>
                     <p className="mt-2 text-primary text-[14px]">{description}</p>
