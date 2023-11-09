@@ -1,5 +1,6 @@
 import {BrowserRouter} from "react-router-dom";
 import {About, Contact, Experience, Feedbacks, Navbar, Works, Tech, Hero, StarsCanvas} from "./components/index.js";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
     return (
@@ -26,6 +27,7 @@ const App = () => {
                     <Contact/>
                     <StarsCanvas/>
                 </div>
+                <Footer/>
             </div>
         </BrowserRouter>
     )
