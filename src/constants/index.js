@@ -3,18 +3,17 @@ import {
     backend,
     creator,
     web,
-    javascript,
+    js,
     typescript,
     html,
     css,
-    reactjs,
-    redux,
+    react,
     tailwind,
-    nodejs,
+    node,
     mongodb,
     git,
     figma,
-    threejs, smyk, design, mysql, express, logo
+    threejs, smyk, design, mysql, express, wordpress, webflow,
 } from "../assets";
 
 export const navLinks = [
@@ -69,35 +68,27 @@ const technologies = [
     },
     {
         name: "JavaScript",
-        icon: javascript,
+        icon: js,
     },
     {
         name: "TypeScript",
         icon: typescript,
     },
     {
-        name: "React JS",
-        icon: reactjs,
-    },
-    {
-        name: "Redux Toolkit",
-        icon: redux,
-    },
-    {
-        name: "Tailwind CSS",
-        icon: tailwind,
-    },
-    {
         name: "Node JS",
-        icon: nodejs,
+        icon: node,
     },
     {
         name: "Express JS",
         icon: express,
     },
     {
-        name: "MongoDB",
-        icon: mongodb,
+        name: "React JS",
+        icon: react,
+    },
+    {
+        name: "Tailwind CSS",
+        icon: tailwind,
     },
     {
         name: "Three JS",
@@ -115,56 +106,49 @@ const technologies = [
         name: "MySQL",
         icon: mysql,
     },
+    {
+        name: "MongoDB",
+        icon: mongodb,
+    },
+    {
+        name: "Wordpress",
+        icon: wordpress,
+    },
+    {
+        name: "Webflow",
+        icon: webflow,
+    },
 ];
 
 const experiences = [
     {
-        title: "Seller, Non Fashion Specialist, Manager",
+        title: "Manager, Non Fashion Specialist, Seller",
         company_name: "Smyk",
         icon: smyk,
         iconBg: "#1C98A1",
         date: "July 2015 - April 2021",
     },
     {
-        title: "Frontend Developer",
-        company_name: "Design by Milencja",
+        title: "Fullstack Developer",
+        company_name: "Design by Milencja - Freelancing",
         icon: design,
         iconBg: "#D8DBD5",
-        date: "Janury 2022 - December 2022",
-    },
-    {
-        title: "Fullstack Developer",
-        company_name: "Milena Pieńkosz",
-        icon: logo,
-        iconBg: "#1C98A1",
-        date: "Jan 2023 - still",
+        date: "Janury 2023 - still",
     },
 ];
 
 const testimonials = [
     {
         testimonial:
-            "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-        name: "Sara Lee",
-        designation: "CFO",
-        company: "Acme Co",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+            "Milena is a committed person and cares about the client's comfort, she is open to suggestions and gives a lot of herself, it is a pleasure to work with her. The website made by her meets my expectations 100%.",
+        name: "Wojciech Z.",
+        designation: "Architect IT",
     },
     {
         testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Rick does.",
-        name: "Chris Brown",
-        designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-        testimonial:
-            "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Lisa Wang",
-        designation: "CTO",
-        company: "456 Enterprises",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+            "Milena works on my application with dedication, I am confident in her skills. Her ideas are valuable and you can see that she doesn't care only about profit, but really wants to help my business.",
+        name: "Martyna P.",
+        designation: "Nursery",
     },
 ];
 
@@ -180,9 +164,6 @@ const projects = [
                 name: "react.js",
             },
             {
-                name: "vite",
-            },
-            {
                 name: "tailwind.css",
             },
         ],
@@ -191,15 +172,36 @@ const projects = [
         source_live_link: "https://github.com/designByMilencja/Van-Life-Website",
     },
     {
+        name: "VanLife App",
+        description:
+            "Application for recording expenses by category, country and month. Currently my travel expenses are" +
+            " entered there, I intend to develop the functionality so that it is possible for other users to add" +
+            " their expenses. I did frontend and backend - both code are in my github page.",
+        tags: [
+            {
+                name: "react.js",
+            },
+            {
+                name: "express.js",
+            },
+            {
+                name: "sass",
+            },
+            {
+                name: "mysql",
+            },
+        ],
+        image: "/projects/camper.png",
+        source_code_link: "https://projectcamper.networkmanager.pl/",
+        source_live_link: "https://github.com/designByMilencja/Project-Camper-NewFrontend",
+    },
+    {
         name: "Space Mobile House Website",
         description:
             "The site of a company offering frame houses for sale. The site includes information about the company, video and photos showcasing the client's products, a timeline with events, and a contact form to allow interaction for potential customers.",
         tags: [
             {
                 name: "next.js",
-            },
-            {
-                name: "react.js",
             },
             {
                 name: "tailwind.css",
@@ -237,7 +239,7 @@ const projects = [
                 name: "webflow",
             },
         ],
-        image: "/projects/webflow2.png",
+        image: "/projects/ai-brain.png",
         source_code_link: "",
         source_live_link: "https://brainstorm-4f8fbf.webflow.io/"
     },
