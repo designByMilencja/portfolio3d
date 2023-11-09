@@ -4,7 +4,7 @@ import {styles} from "../style.js";
 import {fadeIn, textVariant} from "../utils/motion.js";
 import {testimonials} from "../constants/index.js";
 
-const FeedbackCard = ({index, testimonial, name, designation}) => {
+export const FeedbackCard = ({index, testimonial, name, designation}) => {
     return (
         <motion.div
             variants={fadeIn("", "spring", index * 0.5, 0.75)}
@@ -51,4 +51,4 @@ const Feedbacks = () => {
     );
 }
 
-export default SectionWrapper(Feedbacks, "");
+export default SectionWrapper(Feedbacks, "feedbacks");
