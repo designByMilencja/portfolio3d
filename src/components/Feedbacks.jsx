@@ -3,6 +3,7 @@ import {SectionWrapper} from "../hoc/index.js";
 import {styles} from "../style.js";
 import {fadeIn, textVariant} from "../utils/motion.js";
 import {testimonials} from "../constants/index.js";
+import {useTranslation} from "react-i18next";
 
 export const FeedbackCard = ({index, testimonial, name, designation}) => {
     return (
@@ -28,22 +29,27 @@ export const FeedbackCard = ({index, testimonial, name, designation}) => {
 }
 
 const Feedbacks = () => {
+    const { t } = useTranslation();
+    const testimonialsText = t('feedbacks.testimonials', { returnObjects: true });
+    const designationsText = t('feedbacks.designations', { returnObjects: true });
     return (
         <div className="mt-12 rounded-xl">
             <div className={`${styles.padding} tertiary-gradient p-[2px] shadow-card rounded-xl min-h-[300px]`}>
                 <motion.div
                     variants={textVariant()}
                     className="w-full flex flex-col items-start pt-5">
-                    <p className={`${styles.sectionText}`}>What others say</p>
-                    <h2 className={`${styles.h2Text} text-secondary`}>Testimonials</h2>
+                    <p className={`${styles.sectionText}`}>{t('feedbacks.whatOthersSay')}</p>
+                    <h2 className={`${styles.h2Text} text-secondary`}>{t('feedbacks.title')}</h2>
                 </motion.div>
             </div>
             <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
-                {testimonials.map((testimonial, index) => (
+                {testimonials.map((testi, index) => (
                     <FeedbackCard
-                        key={testimonial.name}
+                        key={index}
                         index={index}
-                        {...testimonial}
+                        {...testi}
+                        testimonial={testimonialsText[index]}
+                        designation={designationsText[index]}
                     />
                 ))}
             </div>
