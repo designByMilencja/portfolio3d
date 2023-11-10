@@ -5,7 +5,10 @@ import {useRef, useState} from "react";
 import {slideIn} from "../utils/motion.js";
 import {styles} from "../style.js";
 import EarthCanvas from "./canvas/EarthCanvas.jsx";
+import {useTranslation} from "react-i18next";
+
 const Contact = () => {
+    const { t } = useTranslation();
     const formRef = useRef();
     const [form, setForm] = useState({
         name: '',
@@ -45,49 +48,46 @@ const Contact = () => {
                 variants={slideIn("left", "tween", 0.2, 1)}
                 className="flex-[0.75] tertiary-gradient p-8 rounded-xl"
             >
-                <p className={`${styles.sectionText}`}>Get in touch</p>
-                <h2 className={`${styles.h2Text} text-secondary`}>Contact</h2>
+                <p className={`${styles.sectionText}`}>{t('contact.getInTouch')}</p>
+                <h2 className={`${styles.h2Text} text-secondary`}>{t('contact.title')}</h2>
                 <form
                     ref={formRef}
                     onSubmit={handleSubmit}
                     className="mt-12 flex flex flex-col gap-8"
                 >
                     <label className="flex flex-col">
-                        <span className="text-primary font-medium mb-4">Your name</span>
+                        <span className="text-primary font-medium mb-4">{t('contact.name')}</span>
                         <input
                             type="text"
                             name="name"
                             value={form.name}
                             onChange={handleChange}
-                            placeholder="What's your name?"
                             className="bg-primary py-4 px-6 placeholder:text-secondary text-tertiary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
-                        <span className="text-primary font-medium mb-4">Your email</span>
+                        <span className="text-primary font-medium mb-4">{t('contact.email')}</span>
                         <input
                             type="email"
                             name="email"
                             value={form.email}
                             onChange={handleChange}
-                            placeholder="What's your email?"
                             className="bg-primary py-4 px-6 placeholder:text-secondary text-tertiary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <label className="flex flex-col">
-                        <span className="text-primary font-medium mb-4">Your Message</span>
+                        <span className="text-primary font-medium mb-4">{t('contact.message')}</span>
                         <textarea
                             rows="7"
                             name="message"
                             value={form.message}
                             onChange={handleChange}
-                            placeholder="Type your message?"
                             className="bg-primary py-4 px-6 placeholder:text-secondary text-tertiary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
                     <button type="submit"
                             className="github-gradient tracking-wider py-3 px-8 outline-none w-fit uppercase text-primary font-bold shadow-md shadow-primary rounded-xl self-center">
-                        {loading ? 'Sending...' : 'Send'}
+                        {loading ? t('contact.sending') : t('contact.send')}
                     </button>
                 </form>
             </motion.div>

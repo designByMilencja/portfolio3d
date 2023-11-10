@@ -3,8 +3,14 @@ import {Link} from "react-router-dom";
 import {useState} from "react";
 import { close, Logo, menu} from "../assets/index.js";
 import {navLinks} from "../constants/index.js";
+import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
+    const { i18n, t } = useTranslation();
+    const currentLanguage = i18n.language;
+    const changeLanguage = (lng) => {
+        i18n.changeLanguage(lng);
+    };
     const [active, setActive] = useState('');
     const [toggle, setToggle] = useState(false);
 
@@ -23,11 +29,15 @@ const Navbar = () => {
                 <ul className="hidden list-none sm:flex flex-row gap-10">
                     {navLinks.map((link) => (
                         <li key={link.id}
-                            className={`${active === link.title ? "text-white font-bold" : "text-white"} hover:text-tertiary text-[18px] font-medium cursor-pointer`}
-                            onClick={() => setActive(link.title)}>
-                            <a href={`#${link.id}`}>{link.title}</a>
+                            className={`${active === link.id ? "text-white font-bold" : "text-white"} hover:text-tertiary text-[18px] cursor-pointer`}
+                            onClick={() => setActive(link.id)}>
+                            <a href={`#${link.id}`}>{t(`navigation.${link.id}`)}</a>
                         </li>
                     ))}
+                    <li>{currentLanguage==='pl' ?
+                        <button onClick={() => changeLanguage('en')}>EN</button> :
+                        <button onClick={() => changeLanguage('pl')}>PL</button>}
+                    </li>
                 </ul>
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img src={toggle ? close : menu}
@@ -39,14 +49,18 @@ const Navbar = () => {
                         <ul className="list-none flex justify-end items-start flex-col gap-4">
                             {navLinks.map((link) => (
                                 <li key={link.id}
-                                    className={`${active === link.title ? "text-white font-bold" : "text-white"} hover:text-tertiary font-poppins font-medium cursor-pointer text-[16px]`}
+                                    className={`${active === link.id ? "text-white font-bold" : "text-white"} hover:text-secondary font-poppins cursor-pointer text-[16px]`}
                                     onClick={() => {
                                         setToggle(!toggle);
-                                        setActive(link.title);
+                                        setActive(link.id);
                                     }}>
-                                    <a href={`#${link.id}`}>{link.title}</a>
+                                    <a href={`#${link.id}`}>{t(`navigation.${link.id}`)}</a>
                                 </li>
                             ))}
+                            <li>{currentLanguage==='pl' ?
+                                <button onClick={() => changeLanguage('en')}>EN</button> :
+                                <button onClick={() => changeLanguage('pl')}>PL</button>}
+                            </li>
                         </ul>
                     </div>
                 </div>

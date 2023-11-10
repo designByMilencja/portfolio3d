@@ -5,30 +5,34 @@ import web from "./web.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import css from "./tech/css.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
-import html from "./tech/html.png";
-import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
-import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
-import tailwind from "./tech/tailwind.png";
+import css from "./tech/css-3.png"
+import express from "./tech/express.svg"
+import html from "./tech/html-5.png"
+import js from "./tech/js.png"
+import node from "./tech/node-js.png"
+import react from "./tech/react.png"
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+
+import tailwind from "./tech/tailwind.png";
+import mongodb from "./tech/mongodb.png";
+import mysql from "./tech/mysql.png";
+
 
 import logo from "./logo.png";
 import Logo from "./orange-logo.png";
 import walk from "./walk.svg";
 import design from './Design by Milencja logo.png';
 import smyk from './smyk.png'
-import mysql from './tech/mysql_icon.svg'
-import express from './tech/express.svg'
 import desktop from './desktop-outline.svg'
 import github from './logo-github.svg';
+import wordpress from './tech/wordpress-logo.png';
+import webflow from './tech/webflow-logo.png';
+
 
 export {
+    webflow,
+    wordpress,
     Logo,
     github,
     desktop,
@@ -45,15 +49,12 @@ export {
     menu,
     close,
     css,
-    figma,
+    react,
     git,
     html,
-    javascript,
+    js,
+    node,
     mongodb,
-    nodejs,
-    reactjs,
-    redux,
     tailwind,
     typescript,
-    threejs,
 };
