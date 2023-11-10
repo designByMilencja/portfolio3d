@@ -1,6 +1,7 @@
 import {BrowserRouter} from "react-router-dom";
 import {About, Contact, Experience, Feedbacks, Navbar, Works, Tech, Hero, StarsCanvas} from "./components/index.js";
 import Footer from "./components/Footer.jsx";
+import './utils/i18n';
 
 const App = () => {
     return (
