@@ -1,9 +1,11 @@
 import { motion } from "framer-motion";
 import {styles} from "../style.js";
-import {hero} from "../constants/index.js";
 import {walk} from "../assets/index.js";
+import {useTranslation} from "react-i18next";
 
 const Hero = () => {
+    const { t } = useTranslation();
+    const descriptions = t('home.hero', { returnObjects: true });
     return (
         <section className="relative w-full h-screen mx-auto">
             <div
@@ -13,17 +15,17 @@ const Hero = () => {
                     <div className="w-1 sm:h-60 h-40 secondary-gradient"/>
                 </div>
                 <div className="w-full text-tertiary flex flex-col p-6 overflow-hidden rounded-xl primary-gradient">
-                    <h1 className="text-2xl ss:text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider">Hi, I&apos;m <span className="mt-5 md:mb-0">Milena Pieńkosz</span>
+                    <h1 className="text-2xl ss:text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider">{t('home.h1')}
                     </h1>
-                    <h2 className={`${styles.h2Text} my-1 md:my-5 text-secondary`}>Fullstack Developer</h2>
-                    <div className="my-2 max-w-[400px]">
-                        {hero.map(desc => (
-                            <p key={desc} className={`${styles.sectionSubText} p-4`}>{desc}</p>
+                    <h2 className={`${styles.h2Text} my-2 md:my-5 text-secondary`}>{t('home.h2')}</h2>
+                    <div className="my-1 max-w-[400px]">
+                        {Object.keys(descriptions).map((key) => (
+                            <p key={key} className={`${styles.sectionSubText} p-4`}>{descriptions[key]}</p>
                         ))}
                     </div>
                     <div className="w-full flex justify-center items-center">
                         <a href="#projects">
-                            <p className="capitalize text-tertiary tracking-wider">projects?</p>
+                            <p className="capitalize text-tertiary tracking-wider">{t('home.p')}</p>
                             <motion.div
                                 className="flex justify-center items-center"
                             animate={{
