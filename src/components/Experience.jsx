@@ -5,12 +5,14 @@ import {textVariant} from "../utils/motion.js";
 import {styles} from "../style.js";
 import {SectionWrapper} from "../hoc/index.js";
 import {experiences} from "../constants/index.js";
+import {useTranslation} from "react-i18next";
 
-const ExperienceCard = ({experience}) =>
-    <VerticalTimelineElement
+const ExperienceCard = ({experience, title, date}) => {
+    return(
+        <VerticalTimelineElement
         contentStyle={{background: "#F98D52", color: "#fff"}}
         contentArrowStyle={{borderLeft: "#fff"}}
-        date={experience.date}
+        date={date}
         iconStyle={{background: experience.iconBg}}
         icon={
             <div className="flex justify-center items-center w-full h-full">
@@ -23,20 +25,24 @@ const ExperienceCard = ({experience}) =>
     >
         <div>
             <h3 className="text-bold text-xl">
-                {experience.title}
+                {title}
             </h3>
             <p className="text-tertiary text-base font-bold">{experience.company_name}</p>
         </div>
-    </VerticalTimelineElement>
+    </VerticalTimelineElement>)
+}
 
 const Experience = () => {
+    const { t } = useTranslation();
+    const occupations = t('experience.occupation', { returnObjects: true });
+    const dates = t('experience.date', { returnObjects: true });
     return (
         <section className="w-full rounded-xl tertiary-gradient pb-5">
             <motion.div
                 variants={textVariant()}
                 className="w-full flex flex-col items-start pt-5">
-                <p className={`${styles.sectionText}`}>What I have done so far</p>
-                <h2 className={`${styles.h2Text} text-secondary`}>Work Experience</h2>
+                <p className={`${styles.sectionText}`}>{t('experience.whatIHaveDone')}</p>
+                <h2 className={`${styles.h2Text} text-secondary`}>{t('experience.title')}</h2>
             </motion.div>
             <div className="mt-20 flex flex-col">
                 <VerticalTimeline>
@@ -44,6 +50,9 @@ const Experience = () => {
                         <ExperienceCard
                             key={index}
                             experience={experience}
+                            t={t}
+                            title={occupations[index]}
+                            date={dates[index]}
                         />
                     ))}
 
