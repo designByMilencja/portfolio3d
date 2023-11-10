@@ -5,7 +5,6 @@ import web from "./web.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import css from "./tech/css-3.png"
 import express from "./tech/express.svg"
@@ -18,7 +17,6 @@ import typescript from "./tech/typescript.png";
 import tailwind from "./tech/tailwind.png";
 import mongodb from "./tech/mongodb.png";
 import mysql from "./tech/mysql.png";
-import threejs from "./tech/threejs.svg";
 
 
 import logo from "./logo.png";
@@ -51,7 +49,6 @@ export {
     menu,
     close,
     css,
-    figma,
     react,
     git,
     html,
@@ -60,5 +57,4 @@ export {
     mongodb,
     tailwind,
     typescript,
-    threejs,
 };
