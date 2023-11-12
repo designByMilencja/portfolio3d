@@ -17,24 +17,18 @@ export const ProjectCard = ({index, name, description, tags, image, source_code_
                 scale: 1,
                 speed: 450
             }}
-                  className="flex flex-col bg-tertiary border border-secondary p-2 rounded-xl sm:w-[360px] w-full">
-                <div className="relative w-full h-[400px] mt-2"
-                     style={{
-                         background: `url(${image})`,
-                         backgroundSize: 'cover',
-                         backgroundPosition: "center",
-                         backgroundRepeat:"no-repeat",
-                         position: 'relative',
-                     }}>
-                    <div className="absolute inset-0 flex justify-end m-3 card-img_hover gap-1">
+                  className="flex flex-col bg-tertiary border border-secondary px-4 rounded-xl sm:w-[360px] h-[700px] w-full">
+                <div className="relative w-full">
+                    <img src={image} alt={name} width={320} className="mt-10 mb-4 rounded-xl"/>
+                    <div className="absolute inset-0 m-3 flex justify-end card-img_hover gap-1">
                         <LinkToProject image={github} alt="github icon" src={source_code_link}/>
                         <LinkToProject image={desktop} alt="desktop icon" src={source_live_link}/>
                     </div>
                 </div>
                 <div className="flex flex-col flex-1 justify-between p-1">
-                <div className="mt-5 font-bold flex flex-col justify-between">
+                <div className=" font-bold flex flex-col justify-between">
                     <h3 className="text-primary text-center text-[24px]">{name}</h3>
-                    <p className="m-3 text-primary text-[14px]">{description}</p>
+                    <p className="mt-6 leading-[25px] text-primary text-[14px]">{description}</p>
                 </div>
                 <div className="m-5 flex flex-wrap gap-2 justify-center">
                     {tags.map((tag) => (
@@ -72,7 +66,7 @@ const Works = () => {
                     {t('projects.desc2')}
                 </motion.p>
             </div>
-            <div className="mt-20 p-2 flex flex-wrap gap-7 justify-evenly">
+            <div className="mt-10 p-2 flex flex-wrap gap-7 justify-evenly">
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={`project-${index} `}
