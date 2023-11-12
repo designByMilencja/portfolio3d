@@ -136,7 +136,7 @@ const projects = [
                 name: "tailwind.css",
             },
         ],
-        image: "/projects/vanlife.png",
+        image: "/projects/van.png",
         source_code_link: "https://van-life-kohl.vercel.app/",
         source_live_link: "https://github.com/designByMilencja/Van-Life-Website",
     },
@@ -156,7 +156,7 @@ const projects = [
                 name: "mysql",
             },
         ],
-        image: "/projects/camper.png",
+        image: "/projects/app.png",
         source_code_link: "https://projectcamper.networkmanager.pl/",
         source_live_link: "https://github.com/designByMilencja/Project-Camper-NewFrontend",
     },
@@ -176,7 +176,7 @@ const projects = [
                 name: "email.js",
             },
         ],
-        image: "/projects/spacemobile.png",
+        image: "/projects/space.png",
         source_code_link: "",
         source_live_link: "https://github.com/designByMilencja/frame-houses",
     },
@@ -202,7 +202,7 @@ const projects = [
                 name: "jwt",
             },
         ],
-        image: "/projects/headhunter.png",
+        image: "/projects/head.png",
         source_code_link: "https://github.com/designByMilencja/g7-headhunter-server",
         source_live_link: "https://www.youtube.com/watch?v=B_WKuYeoT2Y"
     },
@@ -213,7 +213,7 @@ const projects = [
                 name: "webflow",
             },
         ],
-        image: "/projects/webflow.png",
+        image: "/projects/brain1.png",
         source_code_link: "",
         source_live_link: "https://brainstorm-4f8fbf.webflow.io/"
     },
@@ -224,9 +224,9 @@ const projects = [
                 name: "webflow",
             },
         ],
-        image: "/projects/ai-brain.png",
+        image: "/projects/brain2.png",
         source_code_link: "",
-        source_live_link: "https://brainstorm-4f8fbf.webflow.io/"
+        source_live_link: "https://brainwave-ai.webflow.io/"
     },
 
 ];
