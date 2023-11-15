@@ -35,7 +35,7 @@ const Hero = () => {
                                 repeat: Infinity,
                                 repeatType: "loop"
                             }}>
-                                <img className="w-[25px] h-[64px]" src="/assets/walk.svg" alt="icon of walking person"/>
+                                <img className="w-[25px] h-[64px]" src="/assets/walk.webp" alt="icon of walking person"/>
                             </motion.div>
                         </a>
                     </div>

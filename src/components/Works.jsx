@@ -20,8 +20,8 @@ export const ProjectCard = ({index, name, description, tags, image, source_code_
                 <div className="relative w-full">
                     <img src={image} alt={name} width={320} height={300} className="mt-10 mb-4 rounded-xl"/>
                     <div className="absolute inset-0 m-3 flex justify-end card-img_hover gap-1">
-                        <LinkToProject image="/assets/logo-github.svg" alt="github icon" src={source_code_link}/>
-                        <LinkToProject image="/assets/desktop-outline.svg" alt="desktop icon" src={source_live_link}/>
+                        <LinkToProject image="/assets/logo-github.webp" alt="github icon" src={source_code_link}/>
+                        <LinkToProject image="/assets/desktop-outline.webp" alt="desktop icon" src={source_live_link}/>
                     </div>
                 </div>
                 <div className="flex flex-col flex-1 justify-between p-1">

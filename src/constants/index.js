@@ -17,86 +17,86 @@ export const navLinks = [
 const services = [
     {
         title: "Web Developer",
-        icon: "/assets/web.png",
+        icon: "/assets/web.webp",
     },
     {
         title: "Next Developer",
-        icon: "/assets/mobile.png",
+        icon: "/assets/mobile.webp",
     },
     {
         title: "Backend Developer",
-        icon: "/assets/backend.png",
+        icon: "/assets/backend.webp",
     },
     {
         title: "Content Creator",
-        icon: "assets/creator.png",
+        icon: "/assets/creator.webp",
     },
 ];
 
 const technologies = [
     {
         name: "HTML 5",
-        icon: "/tech/html-5.png",
+        icon: "/tech/html.webp",
     },
     {
         name: "CSS 3",
-        icon: "/tech/css-3.png",
+        icon: "/tech/css.webp",
     },
     {
         name: "JavaScript",
-        icon: "/tech/js.png",
+        icon: "/tech/js.webp",
     },
     {
         name: "TypeScript",
-        icon: "/tech/typescript.png",
+        icon: "/tech/typescript.webp",
     },
     {
         name: "Node JS",
-        icon: "/tech/node-js.png",
+        icon: "/tech/nodejs.webp",
     },
     {
         name: "Express JS",
-        icon: "/tech/express.svg",
+        icon: "/tech/express.webp",
     },
     {
         name: "React JS",
-        icon: "/tech/react.png",
+        icon: "/tech/react.webp",
     },
     {
         name: "Tailwind CSS",
-        icon: "/tech/tailwind.png",
+        icon: "/tech/tailwind.webp",
     },
     {
         name: "GIT",
-        icon: "/tech/git.png",
+        icon: "/tech/git.webp",
     },
     {
         name: "MySQL",
-        icon: "/tech/mysql.png",
+        icon: "/tech/mysql.webp",
     },
     {
         name: "MongoDB",
-        icon: "/tech/mongodb.png",
+        icon: "/tech/mongodb.webp",
     },
     {
         name: "Wordpress",
-        icon: "/tech/wordpress-logo.png",
+        icon: "/tech/wordpress-logo.webp",
     },
     {
         name: "Webflow",
-        icon: "/tech/webflow-logo.png",
+        icon: "/tech/webflow.webp",
     },
 ];
 
 const experiences = [
     {
         company_name: "Smyk",
-        icon: "/assets/smyk.png",
+        icon: "/assets/smyk.webp",
         iconBg: "#1C98A1",
     },
     {
         company_name: "Design by Milencja - Freelancing",
-        icon: "/assets/Design by Milencja logo.png",
+        icon: "/assets/Design by Milencja logo.webp",
         iconBg: "#D8DBD5",
     },
 ];
@@ -121,7 +121,7 @@ const projects = [
                 name: "tailwind.css",
             },
         ],
-        image: "/projects/van.png",
+        image: "/projects/van-min.webp",
         source_code_link: "https://van-life-kohl.vercel.app/",
         source_live_link: "https://github.com/designByMilencja/Van-Life-Website",
     },
@@ -141,7 +141,7 @@ const projects = [
                 name: "mysql",
             },
         ],
-        image: "/projects/app.png",
+        image: "/projects/app-min.webp",
         source_code_link: "https://projectcamper.networkmanager.pl/",
         source_live_link: "https://github.com/designByMilencja/Project-Camper-NewFrontend",
     },
@@ -161,7 +161,7 @@ const projects = [
                 name: "email.js",
             },
         ],
-        image: "/projects/space.png",
+        image: "/projects/space-min.webp",
         source_code_link: "",
         source_live_link: "https://github.com/designByMilencja/frame-houses",
     },
@@ -187,7 +187,7 @@ const projects = [
                 name: "jwt",
             },
         ],
-        image: "/projects/head.png",
+        image: "/projects/head-min.webp",
         source_code_link: "https://github.com/designByMilencja/g7-headhunter-server",
         source_live_link: "https://www.youtube.com/watch?v=B_WKuYeoT2Y"
     },
@@ -198,7 +198,7 @@ const projects = [
                 name: "webflow",
             },
         ],
-        image: "/projects/brain1.png",
+        image: "/projects/brain1-min.webp",
         source_code_link: "",
         source_live_link: "https://brainstorm-4f8fbf.webflow.io/"
     },
@@ -209,7 +209,7 @@ const projects = [
                 name: "webflow",
             },
         ],
-        image: "/projects/brain2.png",
+        image: "/projects/brain2-min.webp",
         source_code_link: "",
         source_live_link: "https://brainwave-ai.webflow.io/"
     },
