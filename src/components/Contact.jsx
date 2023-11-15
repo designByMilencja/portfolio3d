@@ -10,20 +10,29 @@ import {useTranslation} from "react-i18next";
 const Contact = () => {
     const { t } = useTranslation();
     const formRef = useRef();
+    const [loading, setLoading] = useState(false);
     const [form, setForm] = useState({
         name: '',
         email: '',
         message: '',
-    })
-    const [loading, setLoading] = useState(false);
+    });
+    const [privacyPolicyAccepted, setPrivacyPolicyAccepted] = useState(false);
+
+    const handlePrivacyPolicyChange = (e) => {
+        const { checked } = e.target;
+        setPrivacyPolicyAccepted(checked);
+    };
 
     function handleSubmit(e) {
         e.preventDefault();
+        if (!privacyPolicyAccepted) {
+            return;
+        }
         setLoading(true)
         emailjs.send(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, import.meta.env.VITE_PUBLIC_KEY).then(
             () => {
                 setLoading(false)
-                alert('Thank you. I will get back to you as soon as possible');
+                alert(t('contact.alert1'));
                 setForm({
                     name: '',
                     email: '',
@@ -31,8 +40,8 @@ const Contact = () => {
                 })
             }, (error) => {
                 setLoading(false)
-                console.log(e)
-                alert('Something went wrong')
+                console.log(error)
+                alert(t('contact.alert2'))
             }
         )
     }
@@ -85,6 +94,20 @@ const Contact = () => {
                             className="bg-primary py-4 px-6 placeholder:text-secondary text-tertiary rounded-xl outlined-none border-none font-medium"
                         />
                     </label>
+                    <div className="w-full flex mt-3">
+                        <input
+                            type="checkbox"
+                            id="privacyPolicy"
+                            name="privacyPolicy"
+                            checked={privacyPolicyAccepted}
+                            onChange={handlePrivacyPolicyChange}
+                            required
+                        />
+                        <label htmlFor="privacyPolicy" className="p-3 font-normal text-xs text-center">
+                            Oświadczam, że zapoznałem/am się z polityką prywatności -
+                            <a href="/privacy-policy" target="_blank" className="font-bold hover:text-contact"> Polityka prywatności</a>
+                        </label>
+                    </div>
                     <button type="submit"
                             className="github-gradient tracking-wider py-3 px-8 outline-none w-fit uppercase text-primary font-bold shadow-md shadow-primary rounded-xl self-center">
                         {loading ? t('contact.sending') : t('contact.send')}
