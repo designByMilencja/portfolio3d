@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import {styles} from "../style.js";
-import {walk} from "../assets/index.js";
 import {useTranslation} from "react-i18next";
 
 const Hero = () => {
@@ -36,7 +35,7 @@ const Hero = () => {
                                 repeat: Infinity,
                                 repeatType: "loop"
                             }}>
-                                <img className="w-[25px] h-[64px]" src={walk} alt="icon of walking person"/>
+                                <img className="w-[25px] h-[64px]" src="/assets/walk.svg" alt="icon of walking person"/>
                             </motion.div>
                         </a>
                     </div>

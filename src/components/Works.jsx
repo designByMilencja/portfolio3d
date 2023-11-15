@@ -4,7 +4,6 @@ import {fadeIn, textVariant} from "../utils/motion.js";
 import {styles} from "../style.js";
 import {projects} from "../constants/index.js";
 import {Tilt} from "react-tilt";
-import {desktop, github,} from "../assets/index.js";
 import LinkToProject from "./LinkToProject.jsx";
 import {useTranslation} from "react-i18next";
 
@@ -19,10 +18,10 @@ export const ProjectCard = ({index, name, description, tags, image, source_code_
             }}
                   className="flex flex-col bg-tertiary border border-secondary px-4 rounded-xl sm:w-[360px] h-[700px] w-full">
                 <div className="relative w-full">
-                    <img src={image} alt={name} width={320} className="mt-10 mb-4 rounded-xl"/>
+                    <img src={image} alt={name} width={320} height={300} className="mt-10 mb-4 rounded-xl"/>
                     <div className="absolute inset-0 m-3 flex justify-end card-img_hover gap-1">
-                        <LinkToProject image={github} alt="github icon" src={source_code_link}/>
-                        <LinkToProject image={desktop} alt="desktop icon" src={source_live_link}/>
+                        <LinkToProject image="/assets/logo-github.svg" alt="github icon" src={source_code_link}/>
+                        <LinkToProject image="/assets/desktop-outline.svg" alt="desktop icon" src={source_live_link}/>
                     </div>
                 </div>
                 <div className="flex flex-col flex-1 justify-between p-1">

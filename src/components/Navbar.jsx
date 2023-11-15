@@ -1,7 +1,6 @@
 import {styles} from "../style.js";
 import {Link} from "react-router-dom";
 import {useState} from "react";
-import { close, Logo, menu} from "../assets/index.js";
 import {navLinks} from "../constants/index.js";
 import { useTranslation } from 'react-i18next';
 
@@ -23,7 +22,7 @@ const Navbar = () => {
                           setActive("");
                           window.scrollTo(0, 0);
                       }}>
-                    <img src={Logo}
+                    <img src="/assets/orange-logo.png"
                          className="h-auto w-[82px]" alt="logo image"/>
                 </Link>
                 <ul className="hidden list-none sm:flex flex-row gap-10">
@@ -40,7 +39,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="sm:hidden flex flex-1 justify-end items-center">
-                    <img src={toggle ? close : menu}
+                    <img src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
                          alt="icon menu"
                          className="w-[28px] h-[28px] object-contain cursor-pointer"
                          onClick={()=>setToggle(!toggle)}/>

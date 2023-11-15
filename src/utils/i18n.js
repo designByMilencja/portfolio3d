@@ -35,7 +35,9 @@ i18n
                         email: "Your Email",
                         message: "Your Message",
                         send: "Send",
-                        sending: "Sending..."
+                        sending: "Sending...",
+                        alert1: 'Thank you. I will get back to you as soon as possible',
+                        alert2: "I'm sorry, Something went wrong"
                     },
                     "experience": {
                         whatIHaveDone: "What I Have Done So Far",
@@ -61,8 +63,8 @@ i18n
                         ,
                         desc2:
                             "Below are the projects I have done so far. These include both websites and applications. Each\n" +
-                                    "                    project is briefly described and accompanied by a link to the hosted project and also directly to\n" +
-                                "                    its code on github."
+                            "                    project is briefly described and accompanied by a link to the hosted project and also directly to\n" +
+                            "                    its code on github."
                         ,
                         abouts: [
                             "A page for a couple traveling by camper, containing information about visited countries, photo" +
@@ -79,6 +81,11 @@ i18n
                             "The second variant of the site related to automation and chatbots, the design of the" +
                             " project transferred from figma. Low-code technology. Responsive site- behaving well on both mobile and dektop devices "
                         ]
+                    },
+                    footer: {
+                        h2: "Resources",
+                        icons: "Icons Freepik - Flaticon:",
+                        bgc: "Image in the background"
                     }
                 }
             },
@@ -116,7 +123,9 @@ i18n
                         email: "Twój email",
                         message: "Twoja wiadomość",
                         send: "Wyślij",
-                        sending: "Wysyłanie..."
+                        sending: "Wysyłanie...",
+                        alert1: "Dziękuję za kontakt. Odpowiem jak najszybciej",
+                        alert2: "Przepraszamy coś poszło nie tak, proszę spróbować później"
                     },
                     "experience": {
                         whatIHaveDone: "Dotychczasowe kwalifikacje",
@@ -139,14 +148,14 @@ i18n
                     "projects": {
                         p: "Moje Wykonania",
                         title: "Projekty",
-                        desc1:"Uwielbiam zajmować się różnymi projektami, ponieważ kocham uczyć się" +
-                        " nowych rzeczy o naszym świecie, wielu branżach, nowych ludziach i mojej pracy. Każdy" +
-                        " przypadek mojego klienta traktuję indywidualnie, a także przeprowadzam o nim szczegółowy" +
-                        " research.\n",
+                        desc1: "Uwielbiam zajmować się różnymi projektami, ponieważ kocham uczyć się" +
+                            " nowych rzeczy o naszym świecie, wielu branżach, nowych ludziach i mojej pracy. Każdy" +
+                            " przypadek mojego klienta traktuję indywidualnie, a także przeprowadzam o nim szczegółowy" +
+                            " research.\n",
                         desc2: "Poniżej znajdują się projekty, które dotychczas wykonałam. Obejmują one" +
-                        " zarówno strony internetowe,\n" +
-                        "jak i aplikacje. Każdy projekt jest krótko opisany i posiada link do hostowanego projektu oraz bezpośredni\n" +
-                        "link do jego kodu na GitHubie.",
+                            " zarówno strony internetowe,\n" +
+                            "jak i aplikacje. Każdy projekt jest krótko opisany i posiada link do hostowanego projektu oraz bezpośredni\n" +
+                            "link do jego kodu na GitHubie.",
                         abouts: [
                             "Strona dla pary podróżującej kamperem, zawierająca informacje o odwiedzonych krajach, zdjęcia" +
                             " galerie - slider i galerię z filtrowaniem zdjęć. Z dodatkową podstrona zachęcająca" +
@@ -164,6 +173,11 @@ i18n
                             " projektu przeniesiony z figmy. Technologia low-code. Strona responsywna- dobrze" +
                             " zachowująca się zarówno na urządzeniach mobilnych jak i dektopowych"
                         ]
+                    },
+                    footer: {
+                        h2: "Zasoby",
+                        icons: "Ikony Freepik - Flaticon:",
+                        bgc: "Obraz w tle:",
                     }
                 },
             },
