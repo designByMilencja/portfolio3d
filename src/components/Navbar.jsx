@@ -22,7 +22,7 @@ const Navbar = () => {
                           setActive("");
                           window.scrollTo(0, 0);
                       }}>
-                    <img src="/assets/orange-logo.png"
+                    <img src="/assets/orange-logo.webp"
                          className="h-auto w-[82px]" alt="logo image"/>
                 </Link>
                 <ul className="hidden list-none sm:flex flex-row gap-10">
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </li>
                 </ul>
                 <div className="sm:hidden flex flex-1 justify-end items-center">
-                    <img src={toggle ? "/assets/close.svg" : "/assets/menu.svg"}
+                    <img src={toggle ? "/assets/close.webp" : "/assets/menu.webp"}
                          alt="icon menu"
                          className="w-[28px] h-[28px] object-contain cursor-pointer"
                          onClick={()=>setToggle(!toggle)}/>
