@@ -1,18 +1,3 @@
-import {
-    mobile,
-    backend,
-    creator,
-    web,
-    js,
-    typescript,
-    css,
-    react,
-    tailwind,
-    node,
-    mongodb,
-    git, smyk, design, mysql, express, wordpress, webflow, html,
-} from "../assets";
-
 export const navLinks = [
     {
         id: "about",
@@ -32,86 +17,86 @@ export const navLinks = [
 const services = [
     {
         title: "Web Developer",
-        icon: web,
+        icon: "/assets/web.png",
     },
     {
         title: "Next Developer",
-        icon: mobile,
+        icon: "/assets/mobile.png",
     },
     {
         title: "Backend Developer",
-        icon: backend,
+        icon: "/assets/backend.png",
     },
     {
         title: "Content Creator",
-        icon: creator,
+        icon: "assets/creator.png",
     },
 ];
 
 const technologies = [
     {
         name: "HTML 5",
-        icon: html,
+        icon: "/tech/html-5.png",
     },
     {
         name: "CSS 3",
-        icon: css,
+        icon: "/tech/css-3.png",
     },
     {
         name: "JavaScript",
-        icon: js,
+        icon: "/tech/js.png",
     },
     {
         name: "TypeScript",
-        icon: typescript,
+        icon: "/tech/typescript.png",
     },
     {
         name: "Node JS",
-        icon: node,
+        icon: "/tech/node-js.png",
     },
     {
         name: "Express JS",
-        icon: express,
+        icon: "/tech/express.svg",
     },
     {
         name: "React JS",
-        icon: react,
+        icon: "/tech/react.png",
     },
     {
         name: "Tailwind CSS",
-        icon: tailwind,
+        icon: "/tech/tailwind.png",
     },
     {
         name: "GIT",
-        icon: git,
+        icon: "/tech/git.png",
     },
     {
         name: "MySQL",
-        icon: mysql,
+        icon: "/tech/mysql.png",
     },
     {
         name: "MongoDB",
-        icon: mongodb,
+        icon: "/tech/mongodb.png",
     },
     {
         name: "Wordpress",
-        icon: wordpress,
+        icon: "/tech/wordpress-logo.png",
     },
     {
         name: "Webflow",
-        icon: webflow,
+        icon: "/tech/webflow-logo.png",
     },
 ];
 
 const experiences = [
     {
         company_name: "Smyk",
-        icon: smyk,
+        icon: "/assets/smyk.png",
         iconBg: "#1C98A1",
     },
     {
         company_name: "Design by Milencja - Freelancing",
-        icon: design,
+        icon: "/assets/Design by Milencja logo.png",
         iconBg: "#D8DBD5",
     },
 ];
